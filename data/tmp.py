@@ -1,3 +1,4 @@
+import re
 
 mm = {'Côte':"Cote D'Ivoire","Republic Of Korea":'Korea Dem' ,'Micronesia':'Micronesia',\
      'Northern Mariana Islands':'Northern Mariana Islands', 'Saint Martin':'Saint Martin',\
@@ -9,7 +10,7 @@ mm = {'Côte':"Cote D'Ivoire","Republic Of Korea":'Korea Dem' ,'Micronesia':'Mic
 
 
 
-for country in dif:
+for country in mm:
     for k,v in mm.items():
         #if re.search(fr'{k}',fr'{country}'):
         if re.search(k,country):
